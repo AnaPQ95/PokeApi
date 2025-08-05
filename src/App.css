@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*==Botones==*/
+.paginacion {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.boton {
+  text-align: center;
+  padding: 1em;
+  border: 0;
+  opacity: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boton:hover {
+  opacity: 100%;
+}
+
+/*==filtro==*/
+.main__filtro {
+  text-align: center;
+  padding: 1em;
+  border: 0;
+  opacity: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main__filtro:focus {
+  outline: none;
+  opacity: 100%;
+}
+
+.listaTipos {
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 1em;
+
+}
+
+.listaTipos__tipo {
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 5px;
+  font-size: small;
+  color: var(--idFont);
+  background-color: white;
+  opacity: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listaTipos__tipo:hover {
+  opacity: 100%;
+  scale: 1.5;
+  z-index: 1;
+}

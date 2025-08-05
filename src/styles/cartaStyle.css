@@ -1,0 +1,126 @@
+/*====MAIN====*/
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--anchoMax);
+    margin: var(--gap) auto;
+}
+
+/*==cartas==*/
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 192px);
+    grid-auto-rows: 1fr;
+    gap: var(--gap);
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.main__carta {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main__carta:hover {
+    scale: 1.05;
+}
+
+/*==carta-imgs==*/
+.main__carta--img {
+    display: grid;
+    grid-template: 1fr/ 1fr 2fr 1fr;
+    background-color: var(--cartaColor);
+
+    .img {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+.main__carta--id {
+    text-align: center;
+    align-self: end;
+    background-color: var(--idBack);
+    color: var(--idFont);
+}
+
+.main__carta--titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__carta--boton {
+    margin-left: 0.5em;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--idFont);
+    background-color: var(--idBack);
+    border-radius: 50%;
+    font-size: small;
+    text-align: center;
+    border: none;
+}
+
+.main__carta--boton:hover {
+    background-color: var(--cartaColor);
+    scale: 1.05;
+}
+
+.main__carta--boton.favorito {
+    background-color: rgb(177, 1, 1);
+    color: white;
+}
+
+/*==carta-desc==*/
+.main__carta--descripcion {
+    padding: 0.5em;
+    background-color: white;
+}
+
+.main__carta--nombre,
+.main__carta--evoNombre {
+    justify-self: left;
+    font-size: 1.35em;
+    color: black;
+}
+
+.main__carta--evoNombre:hover {
+    font-weight: bold;
+}
+
+.main__carta--divTipos {
+    display: flex;
+    gap: 0.25em;
+    margin-top: 0.5em;
+}
+
+.main__carta--tipo {
+    text-align: center;
+    padding: 0.15em;
+    border: 1px solid var(--idFont);
+    border-radius: 5px;
+    font-size: small;
+    color: var(--idFont);
+}
+
+.main__carta--tipo:hover {
+    background-color: var(--idBack);
+}
+
+.main__carta--evolucion {
+    margin-top: 1em;
+    border-left: 4px solid var(--idFont);
+    padding-left: 5px;
+    color: var(--idFont);
+}
+
+.oculto {
+    display: none;
+}

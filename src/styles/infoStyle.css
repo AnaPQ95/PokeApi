@@ -1,0 +1,70 @@
+.main__info {
+    max-width: var(--anchoMax);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.main__info--cabecera {
+    display: flex;
+}
+
+.main__info--img {
+    background-color: var(--cartaColor);
+    width: 10em;
+    height: auto;
+
+    .img {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+.main__info--texto {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: var(--idBack);
+}
+.main__info--nombre {
+    margin-left: 1em;
+    border-left: 4px solid var(--idFont);
+    align-self: center;
+    text-align: center;
+    background-color: var(--idBack);
+    color: var(--idFont);
+    font-size: 3em;
+}
+
+.main__info--id {
+    align-self: end;
+    width: fit-content;
+    height: fit-content;
+    text-align: right;
+    background-color: var(--cartaColor);
+    color: var(--idFont);
+}
+
+.main__info--contenedor {
+    display: flex;
+}
+
+.main__info--descripcion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.main__info--link {
+    padding: 0.5em 0.5em;
+    align-self: end;
+    background-color: var(--idBack);
+    color: var(--idFont);
+    text-decoration: none;
+}
+
+.main__info--link:hover {
+    background-color: var(--cartaColor);
+}
